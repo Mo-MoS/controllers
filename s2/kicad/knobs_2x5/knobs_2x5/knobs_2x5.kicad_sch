@@ -711,7 +711,7 @@
 				)
 			)
 		)
-		(symbol "power:+5V"
+		(symbol "power:+3.3V"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -728,7 +728,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+5V"
+			(property "Value" "+3.3V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -754,7 +754,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+5V\""
+			(property "Description" "Power symbol creates a global label with name \"+3.3V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -772,7 +772,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+5V_0_1"
+			(symbol "+3.3V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -810,7 +810,7 @@
 					)
 				)
 			)
-			(symbol "+5V_1_1"
+			(symbol "+3.3V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1025,6 +1025,12 @@
 		)
 	)
 	(junction
+		(at 148.59 95.25)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "04fcd810-7467-482e-9f0e-e23fd2feb8be")
+	)
+	(junction
 		(at 82.55 46.99)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1149,12 +1155,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e87e7759-44b2-492d-80c6-a347224937bf")
-	)
-	(junction
-		(at 148.59 46.99)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "fbcac1b8-0c18-4ba2-8695-f48de6c6e82a")
 	)
 	(no_connect
 		(at 128.27 72.39)
@@ -2279,6 +2279,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:+3.3V")
+		(at 148.59 95.25 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c7021e3-bc59-4199-ad85-953fb5c27f21")
+		(property "Reference" "#PWR3"
+			(at 148.59 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 148.59 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 148.59 95.25 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a5dda131-bea4-4f6d-9cb1-db4ad60e9d44")
+		)
+		(instances
+			(project "knobs_2x5"
+				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
+					(reference "#PWR3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:PWR_FLAG")
 		(at 167.64 52.07 0)
 		(unit 1)
@@ -2419,71 +2485,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 148.59 46.99 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "851b5d1f-4b81-4570-8a3f-1cb4503b9b04")
-		(property "Reference" "#PWR1"
-			(at 148.59 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 148.59 41.656 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 148.59 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0d17edd1-ecce-466e-81e3-f1093907c39d")
-		)
-		(instances
-			(project ""
-				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
-					(reference "#PWR1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_Potentiometer")
 		(at 99.06 43.18 0)
 		(unit 1)
@@ -2552,71 +2553,6 @@
 			(project "knobs_2x5"
 				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
 					(reference "RV6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+5V")
-		(at 180.34 52.07 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d6d18a1-4ede-427f-9d9b-a2bfea5dfe7a")
-		(property "Reference" "#PWR3"
-			(at 180.34 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+5V"
-			(at 180.34 57.404 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 180.34 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 180.34 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 180.34 52.07 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "91682b3b-b061-4c7c-ac58-bf39bfc5d278")
-		)
-		(instances
-			(project "knobs_2x5"
-				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
-					(reference "#PWR3")
 					(unit 1)
 				)
 			)
@@ -2905,6 +2841,72 @@
 			(project "knobs_2x5"
 				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
 					(reference "RV10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 180.34 52.07 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d8f9e455-83bd-47ee-8959-7ecf754d2b9e")
+		(property "Reference" "#PWR1"
+			(at 180.34 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 180.34 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 180.34 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 180.34 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 180.34 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b5fe65af-6df2-498b-bffb-0acf96fb7994")
+		)
+		(instances
+			(project ""
+				(path "/3ede043c-b369-4c23-b4db-8a7a4fd034d2"
+					(reference "#PWR1")
 					(unit 1)
 				)
 			)
