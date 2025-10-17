@@ -3480,10 +3480,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "03f71495-3347-45b5-93fa-e0955caa9d2e")
 		(property "Reference" "J3"
-			(at 186.69 97.7899 90)
+			(at 186.436 99.06 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3491,14 +3490,13 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_02x05_Odd_Even"
-			(at 186.69 100.3299 90)
+		(property "Value" "to_knobs_1x4"
+			(at 172.466 109.982 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x05_P2.54mm_Horizontal"
@@ -3651,14 +3649,13 @@
 				(justify left)
 			)
 		)
-		(property "Value" "Conn_02x08_Odd_Even"
-			(at 215.392 62.23 90)
+		(property "Value" "to_knobs_2x5"
+			(at 181.356 47.498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left)
-				(hide yes)
 			)
 		)
 		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_2x08_P2.54mm_Horizontal"
@@ -4828,8 +4825,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "Conn_02x06_Odd_Even"
-			(at 20.828 55.372 90)
+		(property "Value" "to_analog_mux"
+			(at 43.942 40.64 90)
 			(effects
 				(font
 					(size 1.27 1.27)
